@@ -1,0 +1,62 @@
+/* pages/rt/rt.wxss */
+image{
+    height: 320rpx;
+}
+.Tasks{
+    background-color: white;
+}
+.rtask{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 10px rgb(243, 234, 234) solid;
+}
+.publisher{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+}
+.publishericon{
+    width: 60rpx;
+    height: 60rpx;
+}
+.publishername{
+    margin-left: 20rpx;
+    font-size: 16px;
+}
+.pdate{
+    margin-left: 20rpx;
+    font-size: 16px;
+}
+.money{
+    margin-left: 25rpx;
+    font-size: 30rpx;
+}
+.like_icon {
+    margin-left: 45rpx;
+    width: 38rpx;
+    height: 38rpx;
+}
+.zhengwen{
+    display: flex;
+    flex-direction: column;
+}
+.title{
+    font-size: 35rpx;
+    margin: auto;
+    color: rgb(209, 67, 49)
+}
+.intro{
+    margin-left: 15rpx;
+    font-size: 28rpx;
+    margin-bottom: 20rpx;
+    letter-spacing: 2rpx;
+    line-height: 48rpx;
+}
+.vreceive{
+    display: flex;
+    align-content: space-between;
+}
+
+.receive{
+    font-size: 25rpx;
+}

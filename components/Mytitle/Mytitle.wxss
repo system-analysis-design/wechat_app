@@ -1,0 +1,36 @@
+/* components/Mytitle/Mytitle.wxss */
+.my_title{
+    display: flex;
+    align-items: center;
+    padding: 10rpx;
+    background-color: aliceblue;
+
+}
+.logo{
+    flex: 7;
+}
+.search_icon{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.user_icon{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.down_icon{
+    flex: 3;
+    font-size: 25rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    color: wheat;
+    border-radius: 10rpx;
+    padding: 10rpx;
+    width: 100rpx;
+    height: 60rpx;
+}

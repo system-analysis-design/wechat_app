@@ -1,0 +1,80 @@
+/* pages/index1/index1.wxss */
+/* components/Mytitle/Mytitle.wxss */
+
+.vsearch{
+    display: flex;
+    align-items: center;
+    padding: 10rpx;
+}
+.search{
+    width: 600rpx;
+    display: flex;
+    border:1px solid rgb(177, 170, 170);
+    border-radius: 8px;
+    font-size: 16px;
+}
+.search_icon {
+    display: flex;
+    justify-content: flex-start;
+}
+.index-nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+.index-nav image{
+    width: 80rpx;
+    height: 80rpx;
+}
+.index-nav .nav-item{
+    width: 50%;
+    height: 200rpx;
+    border-right: 1rpx solid #ccc;
+    border-bottom: 1rpx solid #ccc;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+}
+.index-nav .nav-item:nth-child(2n){
+    border-right: none;
+}
+/* .center{
+
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rpx;
+}
+.Receiving_Tasks{
+    display: flex;
+    border: solid 1px red;
+    width: 45%;
+    border-radius: 20rpx;
+    margin: 10rpx;
+    padding: 10rpx;
+}
+.rt{
+    flex: 1;
+    font-size: 35rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Publishing_Tasks {
+    display: flex;
+    border: solid 1px red;
+    width: 45%;
+    border-radius: 20rpx;
+    margin: 10rpx;
+    padding: 10rpx;
+}
+.pt {
+    flex: 1;
+    font-size: 35rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */

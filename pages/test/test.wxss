@@ -1,0 +1,29 @@
+.title{
+    font-size: 40rpx;
+    padding: 15rpx;
+    border-bottom: 1rpx solid rgb(238, 230, 230);
+}
+.question{
+    margin-left: 20rpx;
+}
+.q1{
+    margin-top: 30rpx;
+}
+.ans{
+    display: flex;
+    flex-direction: column;
+    padding: 10rpx;
+    border-bottom: 1rpx solid rgb(238, 238, 233);
+}
+.radio_group{
+    display: flex;
+    flex-direction: column;   
+    font-size: 30rpx;
+}
+.radio{
+    padding: 8rpx;
+}
+.sub_btn{
+  margin-top: 15rpx;
+  width: 200rpx;
+}

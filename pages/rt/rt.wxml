@@ -1,0 +1,35 @@
+<!--pages/rt/rt.wxml-->
+<view class="Tasks" >
+    <!-- <swiper indicator-dots="{{indicaaator_dots}}" autoplay="{{autoplay}}">
+        <swiper-item class="" item-id="">
+            <image class="" src="../../icons/my1.png"></image>
+        </swiper-item>
+        <swiper-item class="" item-id="">
+            <image class="" src="../../icons/my2.png"></image>
+        </swiper-item>
+        <swiper-item class="" item-id="">
+            <image class="" src="../../icons/home2.png"></image>
+        </swiper-item>  
+    </swiper> -->
+    <block wx:for="{{useData}}" wx:for-item="item" wx:key="unique">
+        <view class="rtask">
+            <view class="publisher">
+                <image class="publishericon" src="{{item.publishericon}}" />
+                <text class="publishername" selectable="false" space="false"
+                decode="false">{{item.publishername}}</text>
+                <text class="pdate" selectable="false" space="false" decode="false">{{item.pdate}}</text>
+                <text class="money">酬劳:{{item.money}}</text>
+                <image class="like_icon" catchtap="collectTap" src="../../icons/Recommend1.png"></image>
+            </view>
+            <view class="zhengwen">
+                <text class="title" selectable="false" space="false" decode="false">{{item.title}}</text>
+                <text class="intro" selectable="false" space="false" decode="false">{{item.intro}}</text>
+            </view>
+            <view  class="vreceive" hover-class="none" hover-stop-propagation="false">
+                <button class="receive" bindtap="btnfun" size="mini" >领取</button>
+            </view>
+        </view>
+    </block>
+</view>
+
+
