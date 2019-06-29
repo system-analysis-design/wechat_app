@@ -1,7 +1,0 @@
-{
-  "navigationBarTitleText": "首页",
-  "navigationBarBackgroundColor": "#ff0000",
-  "usingComponents": {
-    "Mytitle": "../../components/Mytitle/Mytitle"
-  }
-}
