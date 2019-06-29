@@ -30,7 +30,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 3,
 			"list": [
 				{
 					"id": -1,
@@ -49,6 +49,13 @@
 					"id": 2,
 					"name": "myQuery",
 					"pathName": "pages/myQueryPage/myQueryPage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Querylist",
+					"pathName": "pages/querylist/querylist",
 					"query": "",
 					"scene": null
 				}

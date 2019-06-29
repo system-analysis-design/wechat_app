@@ -1,42 +1,43 @@
 // pages/querylist/querylist.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    queryList: []
+    ques: null
   },
   
-  //part 1: 载入数据
-  getQueryList: function () {
-    wx.showLoading({
-      title: '加载中',
-    })
-    wx.cloud.callFunction({
-      name: 'queryList',
-      data: {
-        start: this.data.queryList.length,
-        count: 10
-      }
-    }).then(res => {
-      // console.log(res);
-      this.setData({
-        queryList: this.data.movieList.concat(JSON.parse(res.result).subjects)
-        //JSON.parse() 方法将其转换为 JavaScript 对象：
-      });
-      wx.hideLoading();
-    }).catch(err => {
-      console.error(err);
-      wx.hideLoading();
-    });
-  },
-
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    // this.getQueryList();
+    //调用数据库
+    const db = wx.cloud.database()
+    //这里问题出现在权限，把权限设置为最高即可
+    db.collection('Query').get({
+      success: res => {
+        this.setData({
+          ques: res.data
+        })
+        console.log(res)
+        console.log("数据库查询成功")
+      },
+      fail: err => {
+        wx.showToast({
+          title: "数据库查询失败"
+        })
+        console.error(err)
+      }
+    })
+  },
+
+  jumpToDetail: function (e) {
+    console.log(e);
+    wx.navigateTo({
+      url: '../Detail/Detail?id=' + e.currentTarget.dataset.id,
+    })
   },
 
   /**

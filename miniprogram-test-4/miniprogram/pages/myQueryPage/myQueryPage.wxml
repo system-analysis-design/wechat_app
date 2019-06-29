@@ -1,7 +1,7 @@
 <!--pages/myQueryPage/myQueryPage.wxml-->
 <page>
   <block wx:if="{{ques.length==0}}">
-    <view class="nothing">
+    <view class="null">
     当前未创建个人问卷，请通过个人主页添加调查问卷按钮添加~
     </view>
   </block>
