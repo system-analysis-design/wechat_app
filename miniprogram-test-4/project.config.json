@@ -48,7 +48,7 @@
 				{
 					"id": 2,
 					"name": "myQuery",
-					"pathName": "pages/profile/profile",
+					"pathName": "pages/myQueryPage/myQueryPage",
 					"query": "",
 					"scene": null
 				}

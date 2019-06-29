@@ -1,4 +1,4 @@
-// pages/profile/profile.js
+// pages/Detail/Detail.js
 Page({
 
   /**
@@ -6,22 +6,6 @@ Page({
    */
   data: {
 
-  },
-
-  addQuery : function(event){
-    console.log("添加调查问卷");
-    console.log(event);
-    wx.navigateTo({
-      url: "../addQueryPage/addQueryPage",
-    });
-  },
-
-  checkQuery: function (event) {
-    console.log("查看自己的调查问卷");
-    console.log(event);
-    wx.navigateTo({
-      url: "../myQueryPage/myQueryPage",
-    });
   },
 
   /**

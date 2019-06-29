@@ -1,0 +1,26 @@
+<!--pages/myQueryPage/myQueryPage.wxml-->
+<page>
+  <block wx:if="{{ques.length==0}}">
+    <view class="nothing">
+    当前未创建个人问卷，请通过个人主页添加调查问卷按钮添加~
+    </view>
+  </block>
+  <block wx:if="{{ques.length!=0}}">
+    <block wx:for="{{ques}}">
+      <view class="displayMyQuery" wx:if="{{item.isLiving}}"  bindtap='jumpToDetail' data-id="{{item._id}}" id="{{item._id}}">
+        <view class="TextDesc">问卷：{{item.title}} </view>
+        <view class="TextDesc">状态： 进行中 </view>
+        <view class="TextDesc">当前参与人数：{{item.total}} </view>
+        <button  class="finish" type="primary" size="mini" catchtap="finishQuery" data-_id="{{item._id}}"> 完成</button>
+      </view>
+
+
+      <view  class="displayFinishQuery" wx:if="{{item.isLiving!=true}}" bindtap='jumpToDetail' data-id="{{item._id}}" id="{{item._id}}">
+        <view class="TextDesc">问卷：{{item.title}} </view>
+        <view class="TextDesc">状态：已完成 </view>
+        <view class="TextDesc">总参与人数：{{item.total}} </view>
+        <button  class="delete" type="primary" size="mini" catchtap="deleteQuery" data-_id="{{item._id}}" style="background: red"> 删除</button>
+      </view>
+    </block>
+  </block>
+</page>
