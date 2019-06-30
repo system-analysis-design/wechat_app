@@ -71,7 +71,7 @@
 [16340287张嘉彬](https://github.com/system-analysis-design/wechat_app/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/16340287-zhangjb.md)<br>
 
 
-[16340170缪东辰]()
+[16340170缪东辰](https://github.com/system-analysis-design/wechat_app/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/16340170_%E7%BC%AA%E4%B8%9C%E8%BE%B0.md)
 
 
 [16340289张岿瀚]()
