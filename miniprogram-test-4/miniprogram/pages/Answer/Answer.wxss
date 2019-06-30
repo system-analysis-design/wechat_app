@@ -1,1 +1,22 @@
 /* pages/Answer/Answer.wxss */
+.question{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1rpx solid rgb(247, 241, 241);
+    margin-top: 20rpx;
+    padding: 15rpx;
+    font-size: 32rpx;
+    border-radius: 20rpx;
+    margin-bottom: 15rpx;
+}
+.option{
+    margin-top: 20rpx;
+    display: flex;
+    font-size: 30rpx;
+    margin-left: 10rpx;
+    margin-bottom: 15rpx;
+}
+.nextques{
+    margin-top: 35rpx;
+}
