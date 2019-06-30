@@ -29,4 +29,5 @@
 由于上线需要审核，测试时请联系QQ: 672884229，获得体验权限
 
 
+[小组分工与贡献率说明](https://github.com/system-analysis-design/wechat_app/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/Group%20division.md).
 
