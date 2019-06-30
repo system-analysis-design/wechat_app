@@ -33,10 +33,21 @@
 <br>
 
 <br>
+
 [小组分工与贡献率说明](https://github.com/system-analysis-design/wechat_app/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/Group%20division.md).
+
+
 <br>
 个人报告：<br>
+
+
 [16340287张嘉彬](https://github.com/system-analysis-design/wechat_app/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/16340287-zhangjb.md)<br>
+
+
 [16340170缪东辰]()
+
+
 [16340289张岿瀚]()
+
+
 [16340310周伟标]()
