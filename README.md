@@ -30,7 +30,34 @@
 
 
 # 导航
+
 <br>
+
+[Architecture Design](https://github.com/system-analysis-design/wechat_app/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/Architecture%20Design.md)
+
+<br>
+
+[Interface API Design](https://github.com/system-analysis-design/wechat_app/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/Interface%20API%20Design.md)
+
+<br>
+
+[Database Design](https://github.com/system-analysis-design/wechat_app/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/Database%20design.md)
+
+<br>
+
+[SRS](https://github.com/system-analysis-design/wechat_app/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/SRS.md)
+
+<br>
+
+[UI Design](https://github.com/system-analysis-design/wechat_app/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/UI%20Design.md)
+
+<br>
+
+[install description](https://github.com/system-analysis-design/wechat_app/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/install%20description.md)
+
+<br>
+
+[user manual](https://github.com/system-analysis-design/wechat_app/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/user%20manual.md)
 
 <br>
 
