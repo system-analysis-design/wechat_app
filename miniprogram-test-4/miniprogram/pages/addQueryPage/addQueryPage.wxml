@@ -1,45 +1,48 @@
 <page>
-
+<view class="add"> 
   <block wx:if="{{current=='queryDetail'}}">
     <form bindsubmit="queryComplete">
       <view class="hint">
         问卷题目
       </view>
-      <input name="queryTitle" placeholder="请输入问卷题目" auto-focus="true" />
+      <input class="common" name="queryTitle" placeholder="请输入问卷题目" auto-focus="true" />
       <view class="hint">
         问卷描述
       </view>
-      <input name="queryDes" placeholder="请输入问卷的目的、大致内容" />
+      <input  class="common" name="queryDes" placeholder="请输入问卷的目的、大致内容" />
       <view class="hint">
         报酬
       </view>
-      <input name="queryReward" placeholder="请输入积分数额" auto-focus="true" />
+      <input  class="common" name="queryReward" placeholder="请输入积分数额" auto-focus="true" />
       <view class="hint">
         问卷面向人群
       </view>
-      <input name="queryOriented" placeholder="请输入面向人群" auto-focus="true" />
+      <input  class="common" name="queryOriented" placeholder="请输入面向人群" auto-focus="true" />
 
       <button type="primary" form-type="submit">下一步</button>
     </form>
   </block>
+</view>
 
 
 
 
   <block wx:if="{{current=='questionList'}}">
+    <view class="list">
     <view class="hint">
       题目列表
     </view>
     <block wx:for="{{queses}}" wx:key="queses">
-      <view class="ques">
+      <view class="question">
         题目: {{item.quesContent}}
-        <view>1. 是</view>
-        <view>2. 不是</view>
+        <view class="option1">1. 是</view>
+        <view class="option2">2. 不是</view>
       </view>
     </block>
+      </view>
+    <button class="addbtn" type="primary" bindtap="newques" size="mini" plain="true">添加新题</button>
+    <button class="subbtn" type="primary" bindtap="completeAll">提交问卷</button>
 
-    <button type="primary" bindtap="newques" size="mini" plain="true">添加新题</button>
-    <button type="primary" bindtap="completeAll">提交问卷</button>
   </block>
 
 
@@ -48,9 +51,9 @@
       <view class="hint">
         题目内容
       </view>
-      <input name="quesContent" placeholder="请输入题目内容" auto-focus="true" />
-      <button type="primary" form-type="submit">提交问题</button>
-      <button type="warn" bindtap="toques">返回题目列表</button>
+        <input class="inp" name="quesContent" placeholder="请输入题目内容" auto-focus="true" />
+        <button class="sub" type="primary" form-type="submit">提交问题</button>
+        <button class="back" type="warn" bindtap="toques">返回题目列表</button>
     </form>
   </block>
   

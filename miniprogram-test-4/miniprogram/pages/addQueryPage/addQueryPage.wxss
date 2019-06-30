@@ -1,1 +1,61 @@
 /* miniprogram/pages/addQueryPage/addQueryPage.wxss */
+.add{
+    display: flex;
+    flex-direction: column;
+}
+.hint{
+    margin-top: 20rpx;
+    border-bottom: 8rpx solid #ffffff;
+    padding: 15rpx;
+    font-size: 40rpx;
+}
+.common{
+    margin-top: 20rpx;
+    border-bottom: 1rpx solid rgb(218, 215, 215);
+    padding: 15rpx;
+    font-size: 35rpx;
+}
+.inp{
+    margin-top: 12rpx;
+    border-bottom: 1rpx solid rgb(218, 215, 215);
+    padding: 10rpx;
+    font-size: 32rpx;
+    margin-bottom: 8rpx;
+}
+.sub{
+    margin-top: 20rpx;
+    margin-bottom: 10rpx;
+}
+.back{
+    margin-top: 15rpx;
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.question{
+    margin-top: 13rpx;
+    margin-bottom: 13rpx;
+    font-size: 35rpx;
+    padding: 12rpx;
+    border-top: 1rpx solid rgb(218, 215, 215);
+}
+.option1{
+    margin-top: 13rpx;
+    margin-bottom: 13rpx;
+    font-size: 32rpx;
+}
+.option2 {
+    margin-top: 13rpx;
+    margin-bottom: 13rpx;
+    font-size: 32rpx;
+    margin-bottom: 8rpx;
+}
+.addbtn{
+    margin-top: 5rpx;
+}
+.subbtn{
+    margin-top: 5rpx;
+}
+
