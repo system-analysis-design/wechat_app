@@ -1,1 +1,15 @@
-
+<page>
+  <block wx:for="{{ques.questions}}" wx:key="quesIndex">
+    <view class="oneQuestion">
+      <view class="question">第{{item.quesIndex}}题: {{item.quesContent}}</view>
+      <radio-group name="question{{item.quesIndex}}">
+        <label>
+          <view class="cell">有{{item.optionYesNum}}人选择“是”</view>
+        </label>
+        <label>
+          <view class="cell">有{{total-item.optionYesNum}}人选择“否”</view>
+        </label>
+    </radio-group>
+    </view>
+  </block>
+</page>

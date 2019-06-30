@@ -7,35 +7,39 @@ Page({
    * 页面的初始数据
    */
   data: {
-    id: null,
     ques: null,
+    total: 0
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (event) {
-    //获得调查问卷的ID
-    this.setData({
-      id: event.id
-    })
+  onLoad: function (options) {
     const db = wx.cloud.database()
-    db.collection('Query').where({
-      _id: this.data.id
-    }).get({
+    // console.log(options);
+    // console.log(options.id);
+    // console.log("检查optionsId")
+    db.collection('Query').doc(options.id).get({
       success: res => {
-        this.setData({
-          ques: res.data[0]
-        })
-        console.log(res.data)
         console.log("数据库查询成功")
+        // console.log(res.data)
+        console.log(res.data.questions)
+        this.setData({
+          ques: res.data
+        })
+        console.log(res.data.total);
+        // console.log("debug得到的数据")
+        this.setData({
+          total: res.data.total
+        })
+
       },
       fail: err => {
         wx.showToast({
           title: "数据库查询失败"
         })
         console.error(err)
-      }
+      },
     })
   },
 
