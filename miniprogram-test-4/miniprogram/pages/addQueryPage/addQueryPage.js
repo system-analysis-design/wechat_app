@@ -9,19 +9,15 @@ Page({
     queryDes: null,
     queryReward: null,
     queryOriented: null,
+    quesIndex: 0,
 
-    quesTypeArray: '单选题',
-    queses: [],//该问卷下所有已有的题目
-    quesorder: 0,//题目的指数
-    current: "queryDetail",  //默认在调查信息界面
+    queses: [],
+    current: "queryDetail",
     // current: "questionList",
     // current: "option",
 
-    
-    nextquesid: null,
-    user: null,
-    time: null,       //当前时间
-    timetab: null,    //当前时间距1970年1月1日之间的毫秒数
+
+    optionYesNum: 0
   },
 
   queryComplete: function (e) {
@@ -68,18 +64,21 @@ Page({
       })
       return
     }
+
     this.setData({
-      quesorder: this.data.quesorder + 1,
+      quesIndex: this.data.quesIndex + 1,
     })
+
+  
     var quesess = this.data.queses.concat([{
       quesContent: e.detail.value.quesContent,
-      questionTypeid: 1 + parseInt(this.data.questionTypeid),
-      quesOrder: this.data.quesorder,
+      quesIndex: this.data.quesIndex,
+      optionYesNum: this.data.optionYesNum
     }])
+    
     console.log(quesess)
     this.setData({
-      queses: quesess,
-      questionTypeid: 0,
+      queses: quesess
     })
     this.setData({
       current: "questionList",

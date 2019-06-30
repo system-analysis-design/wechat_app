@@ -1,18 +1,42 @@
 // pages/Detail/Detail.js
+let app = getApp()
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    id: null,
+    ques: null,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-
+  onLoad: function (event) {
+    //获得调查问卷的ID
+    this.setData({
+      id: event.id
+    })
+    const db = wx.cloud.database()
+    db.collection('Query').where({
+      _id: this.data.id
+    }).get({
+      success: res => {
+        this.setData({
+          ques: res.data[0]
+        })
+        console.log(res.data)
+        console.log("数据库查询成功")
+      },
+      fail: err => {
+        wx.showToast({
+          title: "数据库查询失败"
+        })
+        console.error(err)
+      }
+    })
   },
 
   /**

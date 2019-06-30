@@ -36,7 +36,7 @@ Page({
   jumpToDetail: function (e) {
     console.log(e);
     wx.navigateTo({
-      url: '../Detail/Detail?id=' + e.currentTarget.dataset.id,
+      url: '../Answer/Answer?id=' + e.currentTarget.dataset.id,
     })
   },
 

@@ -1,0 +1,42 @@
+<!--pages/Answer/Answer.wxml-->
+<page>
+ <form bindsubmit="submitQuery">
+      <block wx:for="{{ques.questions}}" wx:key="quesIndex">
+          <view class="oneQuestion">
+            <view class="question">第{{item.quesIndex}}题.{{item.quesContent}}</view>
+                <radio-group name="question{{item.quesIndex}}" bindchange="listenerRadioGroup">
+                    <label class="option">
+                      <view>
+                        <radio value= "1"></radio>
+                      </view>
+                      <view class="cell">是</view>
+                    </label>
+                    <label class="option">
+                      <view>
+                        <radio value= "0"></radio>
+                      </view>
+                      <view class="cell">否</view>
+                    </label>
+                </radio-group>
+          </view>
+      </block>
+      <block>
+        <view class="next">
+          <button type="primary" class="nextques" form-type="submit">提交</button>
+        </view>
+      </block>
+  </form>
+
+  <block wx:if="{{currentpage==2}}">
+    <view id="thankswrap">
+    <icon type="success" size="100"></icon>
+    <view class="thanks">
+      提交成功
+    </view>
+    <view class="thankscontent">
+      感谢您！
+    </view>
+    <button bindtap="navback" type="primary" id="yes">确定</button>
+  </view>
+  </block>
+</page>
