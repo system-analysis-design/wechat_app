@@ -1,1 +1,6 @@
 /* pages/login/login.wxss */
+.contain{
+  margin: auto;
+  margin-top: 250px;
+  width: 50%;
+}
