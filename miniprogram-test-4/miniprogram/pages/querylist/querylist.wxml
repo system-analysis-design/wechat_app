@@ -8,7 +8,7 @@
   <block wx:if="{{ques.length!=0}}">
     <block wx:for="{{ques}}">
       <view class="displayMyQuery" wx:if="{{item.isLiving}}"  bindtap='jumpToDetail' data-id="{{item._id}}" id="{{item._id}}">
-        <view class="TextDesc">问卷：{{item.title}} </view>
+        <view class="TextDesc1">问卷：{{item.title}} </view>
         <view class="TextDesc">状态： 进行中 </view>
         <view class="TextDesc">当前参与人数：{{item.total}} </view>
       </view>
