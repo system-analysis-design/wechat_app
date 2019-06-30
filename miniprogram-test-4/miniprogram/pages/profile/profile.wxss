@@ -1,0 +1,28 @@
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-img{
+    margin-top: 150rpx;
+}
+.profile-name{
+    margin-top: 20rpx;
+}
+.btn{
+    margin-top: 350rpx;
+}
+.btn1{
+    background-color:#1AAD19;
+    width: 600rpx;
+    border-radius: 10rpx;
+    color: #FFFFFF;
+}
+.btn2 {
+    margin-top: 10rpx;
+    background-color: #1AAD19;
+    width: 600rpx;
+    border-radius: 10rpx;
+    color: #FFFFFF;
+}
