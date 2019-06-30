@@ -58,5 +58,8 @@
 .subbtn{
     margin-top: 5rpx;
 }
+.next{
+    margin-top: 20rpx;
+}
 
 
