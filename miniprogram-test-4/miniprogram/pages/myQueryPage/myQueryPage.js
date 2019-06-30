@@ -54,7 +54,6 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    //调用数据库
     const db = wx.cloud.database()
     console.log(app.globalData.userInfo.openid)
     db.collection('Query').where({

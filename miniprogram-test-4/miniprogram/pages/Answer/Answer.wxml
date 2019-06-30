@@ -27,16 +27,4 @@
       </block>
   </form>
 
-  <block wx:if="{{currentpage==2}}">
-    <view id="thankswrap">
-    <icon type="success" size="100"></icon>
-    <view class="thanks">
-      提交成功
-    </view>
-    <view class="thankscontent">
-      感谢您！
-    </view>
-    <button bindtap="navback" type="primary" id="yes">确定</button>
-  </view>
-  </block>
 </page>

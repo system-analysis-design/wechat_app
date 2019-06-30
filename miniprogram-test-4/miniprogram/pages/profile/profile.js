@@ -1,11 +1,12 @@
 // pages/profile/profile.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    Credit: 0
   },
 
   addQuery : function(event){
@@ -28,7 +29,25 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    const db = wx.cloud.database()
+    console.log(app.globalData.userInfo.openid)
+    db.collection('UsersInfo').where({
+      _openid: app.globalData.userInfo.openid
+    }).get({
+      success: res => {
+        this.setData({
+          Credit: res.data[0].credit
+        })
+        console.log(res)
+        console.log("数据库查询成功")
+      },
+      fail: err => {
+        wx.showToast({
+          title: "数据库查询失败"
+        })
+        console.error(err)
+      }
+    })
   },
 
   /**
@@ -56,7 +75,6 @@ Page({
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
   },
 
   /**

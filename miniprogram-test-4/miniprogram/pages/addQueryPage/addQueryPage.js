@@ -27,7 +27,7 @@ Page({
       // console.log(e.detail.value.queryReward)
       // console.log(e.detail.value.queryOriented)
       wx.showToast({
-        title: '输入不能为空',
+        title: '输入不能为空！',
       })
       return
     }
@@ -88,11 +88,10 @@ Page({
 
 
   completeAll: function () {
-    //调用云数据库
     const db = wx.cloud.database()
     if (this.data.queses.length == 0) {
       wx.showToast({
-        title: '请添加新题',
+        title: '请增加新题目',
       })
       return
     }
