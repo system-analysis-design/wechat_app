@@ -61,6 +61,10 @@
 
 <br>
 
+[展示视频地址](https://github.com/system-analysis-design/wechat_app/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/%E5%B1%95%E7%A4%BA%E8%A7%86%E9%A2%91.mp4)
+
+<br>
+
 [小组分工与贡献率说明](https://github.com/system-analysis-design/wechat_app/blob/master/%E9%A1%B9%E7%9B%AE%E6%96%87%E6%A1%A3/Group%20division.md).
 
 
