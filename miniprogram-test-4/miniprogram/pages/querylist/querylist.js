@@ -51,7 +51,24 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    //调用数据库
+    const db = wx.cloud.database()
+    //这里问题出现在权限，把权限设置为最高即可
+    db.collection('Query').get({
+      success: res => {
+        this.setData({
+          ques: res.data
+        })
+        console.log(res)
+        console.log("数据库查询成功")
+      },
+      fail: err => {
+        wx.showToast({
+          title: "数据库查询失败"
+        })
+        console.error(err)
+      }
+    })
   },
 
   /**
